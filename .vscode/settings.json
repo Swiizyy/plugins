@@ -7,7 +7,6 @@
 	"files.eol": "\n",
 	"deno.enable": false,
 	"conventionalCommits.scopes": [
-		"plugin-botlist: initial commit",
 		"plugin-botlist"
 	]
 }
