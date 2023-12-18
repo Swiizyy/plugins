@@ -24,17 +24,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           repository: ${{ github.event.inputs.repository || 'sapphiredev/sapphire-template' }}
           ref: ${{ github.event.inputs.ref || 'main' }}
       - name: Add TypeScript problem matcher
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
-      - name: Use Node.js v16
-        uses: actions/setup-node@v3
+      - name: Use Node.js v20
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           cache: yarn
           registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
