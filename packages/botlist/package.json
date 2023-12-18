@@ -1,7 +1,7 @@
 {
-	"name": "@swiizyy/plugin-template",
-	"version": "6.0.1",
-	"description": "Template plugin for @sapphire/framework.",
+	"name": "@swiizyy/plugin-botlist",
+	"version": "1.0.0",
+	"description": "Plugin for @sapphire/framework to post stats to several discord bot lists.",
 	"author": "@swiizyy",
 	"license": "MIT",
 	"main": "dist/cjs/index.cjs",
@@ -17,9 +17,19 @@
 				"types": "./dist/cjs/index.d.ts",
 				"default": "./dist/cjs/index.cjs"
 			}
+		},
+		"./register": {
+			"import": {
+				"types": "./dist/esm/register.d.mts",
+				"default": "./dist/esm/register.mjs"
+			},
+			"require": {
+				"types": "./dist/cjs/register.d.ts",
+				"default": "./dist/cjs/register.cjs"
+			}
 		}
 	},
-	"homepage": "https://github.com/swiizyy/plugins/tree/main/packages/template",
+	"homepage": "https://github.com/swiizyy/plugins/tree/main/packages/botlist",
 	"scripts": {
 		"test": "vitest run",
 		"lint": "eslint src tests --ext ts --fix",
@@ -35,15 +45,14 @@
 		"check-update": "cliff-jumper --dry-run"
 	},
 	"dependencies": {
-		"@types/ws": "^8.5.10",
-		"tldts": "^6.1.1",
-		"tslib": "^2.6.2",
-		"undici": "^6.0.1"
+		"tiny-typed-emitter": "^2.1.0",
+		"tslib": "^2.5.0",
+		"undici": "^5.16.0"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/swiizyy/plugins.git",
-		"directory": "packages/template"
+		"directory": "packages/botlist"
 	},
 	"files": [
 		"dist/"
@@ -60,7 +69,9 @@
 		"ts",
 		"yarn",
 		"discord",
-		"sapphire"
+		"sapphire",
+		"botlist",
+		"topgg"
 	],
 	"bugs": {
 		"url": "https://github.com/swiizyy/plugins/issues"

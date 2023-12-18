@@ -1428,22 +1428,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swiizyy/plugin-template@workspace:packages/template":
+"@swiizyy/plugin-botlist@workspace:packages/botlist":
   version: 0.0.0-use.local
-  resolution: "@swiizyy/plugin-template@workspace:packages/template"
+  resolution: "@swiizyy/plugin-botlist@workspace:packages/botlist"
   dependencies:
     "@favware/cliff-jumper": "npm:^2.2.3"
     "@favware/rollup-type-bundler": "npm:^3.2.1"
-    "@types/ws": "npm:^8.5.10"
     concurrently: "npm:^8.2.2"
-    tldts: "npm:^6.1.1"
-    tslib: "npm:^2.6.2"
+    tiny-typed-emitter: "npm:^2.1.0"
+    tslib: "npm:^2.5.0"
     tsup: "npm:^8.0.1"
     tsx: "npm:^4.6.2"
     typedoc: "npm:^0.25.4"
     typedoc-json-parser: "npm:^9.0.1"
     typescript: "npm:^5.3.3"
-    undici: "npm:^6.0.1"
+    undici: "npm:^5.16.0"
   languageName: unknown
   linkType: soft
 
@@ -6691,6 +6690,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tiny-typed-emitter@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "tiny-typed-emitter@npm:2.1.0"
+  checksum: 709bca410054e08df4dc29d5ea0916328bb2900d60245c6a743068ea223887d9fd2c945b6070eb20336275a557a36c2808e5c87d2ed4b60633458632be4a3e10
+  languageName: node
+  linkType: hard
+
 "tinybench@npm:^2.5.1":
   version: 2.5.1
   resolution: "tinybench@npm:2.5.1"
@@ -6716,24 +6722,6 @@ __metadata:
   version: 3.0.0
   resolution: "titleize@npm:3.0.0"
   checksum: 71fbbeabbfb36ccd840559f67f21e356e1d03da2915b32d2ae1a60ddcc13a124be2739f696d2feb884983441d159a18649e8d956648d591bdad35c430a6b6d28
-  languageName: node
-  linkType: hard
-
-"tldts-core@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "tldts-core@npm:6.1.1"
-  checksum: 75935b1ce637121b271c5ac636c7b81bbe95945da7a38fbec211a457ab003adb06554918295b5da97dc34f459a115adea9010708796cb7a88540fb97c12c4656
-  languageName: node
-  linkType: hard
-
-"tldts@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "tldts@npm:6.1.1"
-  dependencies:
-    tldts-core: "npm:^6.1.1"
-  bin:
-    tldts: bin/cli.js
-  checksum: 02daef314c3c3fc819f5757dcca09d74b71b3260cac3390c1437719bed78012bfea0494ecae53b664b9116a72e4061601a1a09979bb323725b0f788b5c8f155e
   languageName: node
   linkType: hard
 
@@ -6855,7 +6843,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.6.2, tslib@npm:^2.6.0, tslib@npm:^2.6.2":
+"tslib@npm:2.6.2, tslib@npm:^2.5.0, tslib@npm:^2.6.0, tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: bd26c22d36736513980091a1e356378e8b662ded04204453d353a7f34a4c21ed0afc59b5f90719d4ba756e581a162ecbf93118dc9c6be5acf70aa309188166ca
@@ -7157,21 +7145,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.25.4":
+"undici@npm:^5.16.0, undici@npm:^5.25.4":
   version: 5.28.2
   resolution: "undici@npm:5.28.2"
   dependencies:
     "@fastify/busboy": "npm:^2.0.0"
   checksum: 07ab8b812c7322f5faba55268562e3626463171ace8a2e5861e5793e69f8901e809bcdeb4013126fe8d1602baac247ea3c0c996073dbf9709516295b0a4dd18f
-  languageName: node
-  linkType: hard
-
-"undici@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "undici@npm:6.0.1"
-  dependencies:
-    "@fastify/busboy": "npm:^2.0.0"
-  checksum: 48d7f3c9aa9e1ca3fb2488c8aa25838e9163d3a7f1e41d695ed110006abc26648cf97c15d76abfd896fe16128e34136c8a7e0723e0583451ed9f34aaa37513ad
   languageName: node
   linkType: hard
 

@@ -11,7 +11,7 @@
 
 **Packages**
 
-[![npm](https://img.shields.io/npm/v/@swiizyy/plugin-template?color=crimson&logo=npm&style=flat-square&label=@swiizyy/plugin-template)](https://www.npmjs.com/package/@swiizyy/plugin-template)
+[![npm](https://img.shields.io/npm/v/@swiizyy/plugin-botlist?color=crimson&logo=npm&style=flat-square&label=@swiizyy/plugin-botlist)](https://www.npmjs.com/package/@swiizyy/plugin-botlist)
 
 </div>
 
