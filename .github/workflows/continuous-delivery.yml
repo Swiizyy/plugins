@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          repository: ${{ github.event.inputs.repository || 'swiizyy/sapphire-template' }}
+          repository: ${{ github.event.inputs.repository || 'swiizyy/plugins' }}
           ref: ${{ github.event.inputs.ref || 'main' }}
       - name: Add TypeScript problem matcher
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
