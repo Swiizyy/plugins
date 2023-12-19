@@ -1,7 +1,16 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [@swiizyy/plugin-influxdb@1.4.0](https://github.com/swiizyy/plugins/compare/@swiizyy/plugin-influxdb@1.4.0...@swiizyy/plugin-influxdb@1.4.0) - (2023-12-19)
+
+## 🏠 Refactor
+
+- **plugin-influxdb:** :recycle: make all virtual pieces ([e935f69](https://github.com/swiizyy/plugins/commit/e935f699181cbb41bc97d2971c4a6233ee899fb7))
+
+## 🚀 Features
+
+- **plugin-influxdb:** :rocket: initial commit ([95999ce](https://github.com/swiizyy/plugins/commit/95999ce8ab6b2d1401ea5dbc43b6d3133997f2b1))
 
 # [1.3.0](https://github.com/kaname-png/neko-plugins/compare/@kaname-png/plugin-influxdb@1.1.0...@kaname-png/plugin-influxdb@1.3.0) (2023-10-22)
 
