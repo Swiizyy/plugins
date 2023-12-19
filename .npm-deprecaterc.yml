@@ -1,3 +1,4 @@
 name: '*next*'
 package:
   - '@swiizyy/plugin-botlist'
+  - '@swiizyy/plugin-influxdb'

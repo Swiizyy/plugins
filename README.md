@@ -12,6 +12,8 @@
 **Packages**
 
 [![npm](https://img.shields.io/npm/v/@swiizyy/plugin-botlist?color=crimson&logo=npm&style=flat-square&label=@swiizyy/plugin-botlist)](https://www.npmjs.com/package/@swiizyy/plugin-botlist)
+[![npm](https://img.shields.io/npm/v/@swiizyy/plugin-influxdb?color=crimson&logo=npm&style=flat-square&label=@swiizyy/plugin-influxdb)](https://www.npmjs.com/package/@swiizyy/plugin-influxdb)
+
 
 </div>
 
