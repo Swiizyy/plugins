@@ -1,5 +1,5 @@
 import { container } from '@sapphire/framework';
-import { Client } from '../structures';
+import { InfluxClient } from '../structures/index';
 
 export function tryNumberParse(value: string | undefined) {
 	if (typeof value === 'string') {
@@ -12,5 +12,5 @@ export function tryNumberParse(value: string | undefined) {
 }
 
 export function isInfluxInitialized(): boolean {
-	return Reflect.has(container, 'analytics') && container.client.analytics instanceof Client;
+	return Reflect.has(container.client, 'analytics') && container.client.analytics instanceof InfluxClient;
 }

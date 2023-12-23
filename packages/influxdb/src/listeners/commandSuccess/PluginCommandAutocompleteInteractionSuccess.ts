@@ -1,6 +1,5 @@
-import { type AutocompleteInteractionPayload, Events } from '@sapphire/framework';
-import { AnalyticsListener } from '../../lib/structures/AnalyticsListener';
-import { CommandRunTypes } from '../../lib/types';
+import { Events, type AutocompleteInteractionPayload } from '@sapphire/framework';
+import { AnalyticsListener, CommandRunTypes } from '../../index';
 import { sharedCommandSuccessRun } from './_shared';
 
 export class PluginAnalyticsListener extends AnalyticsListener {

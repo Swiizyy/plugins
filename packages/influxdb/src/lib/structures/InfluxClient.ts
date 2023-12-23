@@ -1,7 +1,7 @@
-import { type ClientOptions, InfluxDB, Point, type QueryApi, type WriteApi, type WritePrecisionType } from '@influxdata/influxdb-client';
-import { tryNumberParse } from '../utils';
+import { InfluxDB, Point, type ClientOptions, type QueryApi, type WriteApi, type WritePrecisionType } from '@influxdata/influxdb-client';
+import { tryNumberParse } from '../utils/index';
 
-export class Client {
+export class InfluxClient {
 	public readonly influx: InfluxDB;
 	public readonly queryApi?: QueryApi;
 	public readonly writeApi?: WriteApi;
@@ -9,8 +9,7 @@ export class Client {
 
 	private readonly injectedTags: [name: string, value: string][] = [];
 
-	public constructor(options: Client.Options);
-	public constructor({ org, writeBucket, writePrecision, ...options }: Client.Options = {}) {
+	public constructor({ org, writeBucket, writePrecision, ...options }: InfluxOptions = {}) {
 		this.influx = new InfluxDB(
 			process.env.INFLUX_OPTIONS_STRING ?? {
 				...options,
@@ -93,10 +92,8 @@ export class Client {
 	}
 }
 
-export namespace Client {
-	export interface Options extends Partial<ClientOptions> {
-		org?: string;
-		writeBucket?: string;
-		writePrecision?: WritePrecisionType;
-	}
+export interface InfluxOptions extends Partial<ClientOptions> {
+	org?: string;
+	writeBucket?: string;
+	writePrecision?: WritePrecisionType;
 }

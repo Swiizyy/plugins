@@ -1,28 +1,23 @@
 import 'tslib';
-import { Client } from './lib/structures';
-import { type Env } from './lib/types';
+import { InfluxClient, type InfluxOptions } from './lib/structures/InfluxClient';
 
-export type { InfluxDB, Point, QueryApi, WriteApi, WritePrecisionType } from '@influxdata/influxdb-client';
-export { Client, type InfluxOptions };
+export type * from '@influxdata/influxdb-client';
 
-interface InfluxOptions extends Client.Options {
-	loadDefaultListeners?: boolean;
-}
+export * from './lib/structures/InfluxClient';
+export * from './lib/structures/AnalyticsListener';
+export * from './lib/types/AnalyticsSchema';
+export * from './listeners/_load';
 
 declare module 'discord.js' {
 	interface ClientOptions {
 		analytics?: InfluxOptions;
+		loadInfluxDefaultListeners?: boolean;
+		automaticallyAnalyticsSync?: boolean;
 	}
 }
 
 declare module '@sapphire/framework' {
 	interface SapphireClient {
-		analytics: Client | null;
-	}
-}
-
-declare global {
-	namespace NodeJS {
-		interface ProcessEnv extends Env {}
+		analytics: InfluxClient;
 	}
 }

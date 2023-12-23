@@ -1,6 +1,5 @@
 import { Point } from '@influxdata/influxdb-client';
-import type { AnalyticsListener } from '../../lib/structures';
-import { Actions, CommandTypes, Points, Tags, type CommandRunTypes } from '../../lib/types';
+import { Actions, CommandTypes, Points, Tags, type AnalyticsListener, type CommandRunTypes } from '../../index';
 
 export function sharedCommandSuccessRun(listener: AnalyticsListener, commandName: string, runType: CommandRunTypes, category: string | null): void {
 	const command = new Point(Points.Commands)

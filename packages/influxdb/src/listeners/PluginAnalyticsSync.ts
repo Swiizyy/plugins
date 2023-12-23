@@ -1,6 +1,6 @@
 import { Point } from '@influxdata/influxdb-client';
-import { AnalyticsListener } from '../lib/structures';
-import { Actions, AnalyticsSync, Points, Tags } from '../lib/types';
+import { AnalyticsListener } from '../lib/structures/index';
+import { Actions, AnalyticsSync, Points, Tags } from '../lib/types/index';
 
 export class PluginAnalyticsListener extends AnalyticsListener {
 	public constructor(context: AnalyticsListener.Context) {

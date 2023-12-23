@@ -1,9 +1,8 @@
 import './index';
 
 import { container, Plugin, postInitialization, postLogin, preGenericsInitialization, SapphireClient } from '@sapphire/framework';
-import { Client } from './lib/structures';
-import { AnalyticsSync } from './lib/types';
-import { loadListeners } from './listeners/_load';
+import { InfluxClient, loadListeners } from './index';
+import { AnalyticsSync } from './lib/types/index';
 
 /**
  * Plugin that allows to manage nodejs application environment variables.
@@ -11,16 +10,22 @@ import { loadListeners } from './listeners/_load';
  */
 export class EnvPlugin extends Plugin {
 	public static [preGenericsInitialization](this: SapphireClient): void {
-		this.analytics = this.options.analytics ? new Client(this.options.analytics) : null;
+		this.analytics = new InfluxClient(this.options.analytics);
 	}
 
 	public static [postInitialization](this: SapphireClient): void {
-		if (this.options.analytics?.loadDefaultListeners !== true) return;
+		if (!(this.options.loadInfluxDefaultListeners ?? true)) {
+			return;
+		}
 		loadListeners();
 	}
 
 	public static [postLogin](this: SapphireClient): void {
-		if (this.options.analytics?.loadDefaultListeners !== true) return;
+		if (!(this.options.loadInfluxDefaultListeners ?? true)) {
+			return;
+		}
+		if (!(this.options.loadInfluxDefaultListeners ?? true)) return;
+
 		container.logger.info('[InfluxDB-Plugin]: Enabled. Synchronizing stats with InfluxDB');
 		container.logger.info('[InfluxDB-Plugin]: Auto-posting of statistics has been enabled');
 

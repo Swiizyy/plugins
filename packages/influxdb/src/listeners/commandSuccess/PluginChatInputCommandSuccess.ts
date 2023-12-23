@@ -1,6 +1,5 @@
 import { Events, type ChatInputCommandSuccessPayload } from '@sapphire/framework';
-import { AnalyticsListener } from '../../lib/structures/AnalyticsListener';
-import { CommandRunTypes } from '../../lib/types';
+import { AnalyticsListener, CommandRunTypes } from '../../index';
 import { sharedCommandSuccessRun } from './_shared';
 
 export class PluginAnalyticsListener extends AnalyticsListener {

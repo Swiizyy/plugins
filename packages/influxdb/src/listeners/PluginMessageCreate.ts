@@ -1,5 +1,5 @@
 import { Events } from '@sapphire/framework';
-import { AnalyticsListener } from '../lib/structures';
+import { AnalyticsListener } from '../lib/structures/index';
 
 export class PluginAnalyticsListener extends AnalyticsListener {
 	public constructor(context: AnalyticsListener.Context) {

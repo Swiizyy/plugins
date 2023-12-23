@@ -1,7 +1,6 @@
 import { Events } from '@sapphire/framework';
 import type { Guild } from 'discord.js';
-import { AnalyticsListener } from '../../lib/structures/AnalyticsListener';
-import { Actions } from '../../lib/types';
+import { AnalyticsListener, Actions } from '../../index';
 import { sharedGuildRun } from './_shared';
 
 export class PluginAnalyticsListener extends AnalyticsListener {

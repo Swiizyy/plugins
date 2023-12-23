@@ -1,11 +1,11 @@
-import { Tags } from '../types';
 import type { Point } from '@influxdata/influxdb-client';
 import { container, Listener, Result } from '@sapphire/framework';
+import { Tags } from '../types/index';
 
 export abstract class AnalyticsListener extends Listener {
 	public tags: [Tags, string][] = [];
 
-	public constructor(context: Listener.Context, options?: AnalyticsListener.Options) {
+	public constructor(context: Listener.LoaderContext, options?: AnalyticsListener.Options) {
 		super(context, { enabled: Boolean(container.client.analytics?.writeApi), ...options });
 	}
 
