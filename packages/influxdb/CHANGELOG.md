@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+# [@swiizyy/plugin-influxdb@1.4.1](https://github.com/swiizyy/plugins/compare/@swiizyy/plugin-influxdb@1.4.1...@swiizyy/plugin-influxdb@1.4.1) - (2023-12-23)
+
+## 🏠 Refactor
+
+- **plugin-influxdb:** :recycle: make all virtual pieces ([e935f69](https://github.com/swiizyy/plugins/commit/e935f699181cbb41bc97d2971c4a6233ee899fb7))
+
+## 🐛 Bug Fixes
+
+- **plugin-influxdb:** Fix import paths ([c8d1c83](https://github.com/swiizyy/plugins/commit/c8d1c8391d8040d542471d40a123210e3340ed22))
+
+## 🚀 Features
+
+- **plugin-influxdb:** :rocket: initial commit ([95999ce](https://github.com/swiizyy/plugins/commit/95999ce8ab6b2d1401ea5dbc43b6d3133997f2b1))
+
 # [@swiizyy/plugin-influxdb@1.4.0](https://github.com/swiizyy/plugins/compare/@swiizyy/plugin-influxdb@1.4.0...@swiizyy/plugin-influxdb@1.4.0) - (2023-12-19)
 
 ## 🏠 Refactor
