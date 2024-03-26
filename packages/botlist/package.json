@@ -46,7 +46,7 @@
 	},
 	"dependencies": {
 		"tiny-typed-emitter": "^2.1.0",
-		"tslib": "^2.5.0",
+		"tslib": "^2.6.2",
 		"undici": "^5.16.0"
 	},
 	"repository": {
@@ -81,12 +81,12 @@
 	},
 	"devDependencies": {
 		"@favware/cliff-jumper": "^2.2.3",
-		"@favware/rollup-type-bundler": "^3.2.1",
+		"@favware/rollup-type-bundler": "^3.3.0",
 		"concurrently": "^8.2.2",
-		"tsup": "^8.0.1",
-		"tsx": "^4.6.2",
-		"typedoc": "^0.25.4",
+		"tsup": "^8.0.2",
+		"tsx": "^4.7.1",
+		"typedoc": "^0.25.12",
 		"typedoc-json-parser": "^9.0.1",
-		"typescript": "^5.3.3"
+		"typescript": "^5.4.3"
 	}
 }
