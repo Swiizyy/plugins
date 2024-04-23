@@ -84,7 +84,7 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@favware/cliff-jumper": "^2.2.3",
+		"@favware/cliff-jumper": "^3.0.3",
 		"@favware/rollup-type-bundler": "^3.2.1",
 		"concurrently": "^8.2.2",
 		"tsup": "^8.0.1",
