@@ -23,6 +23,10 @@
 		"docs": {
 			"dependsOn": [],
 			"outputs": ["docs/**"]
+		},
+		"test": {
+			"dependsOn": [],
+			"outputs": []
 		}
 	}
 }

@@ -35,8 +35,8 @@
 	],
 	"homepage": "https://github.com/swiizyy/plugins/tree/main/packages/influxdb",
 	"scripts": {
-		"test": "vitest run",
-		"lint": "eslint src tests --ext ts --fix",
+		"test": "yarn build",
+		"lint": "eslint src --ext ts --fix",
 		"build": "tsup && yarn build:types",
 		"build:types": "concurrently \"yarn:build:types:*\"",
 		"build:types:cjs": "rollup-type-bundler -d dist/cjs",

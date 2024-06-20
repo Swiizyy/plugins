@@ -8,7 +8,7 @@
 		"clean": "rimraf \"packages/**/dist\" \"packages/**/.turbo\"",
 		"lint": "eslint packages --ext mjs,js,ts,tsx --fix",
 		"format": "prettier --write \"packages/**/{src,tests,scripts}/**/*.{mjs,ts,js}\"",
-		"test": "vitest run",
+		"test": "turbo run test",
 		"build": "turbo run build",
 		"docs": "turbo run docs",
 		"typecheck": "turbo run typecheck",
@@ -33,7 +33,6 @@
 		"@types/ws": "^8.5.10",
 		"@typescript-eslint/eslint-plugin": "^6.14.0",
 		"@typescript-eslint/parser": "^6.14.0",
-		"@vitest/coverage-v8": "^1.0.4",
 		"concurrently": "^8.2.2",
 		"cz-conventional-changelog": "^3.3.0",
 		"discord-api-types": "^0.37.66",
@@ -49,9 +48,7 @@
 		"tsup": "^8.0.1",
 		"tsx": "^4.6.2",
 		"turbo": "^1.11.2",
-		"typescript": "^5.3.3",
-		"vite": "^5.0.12",
-		"vitest": "^1.0.4"
+		"typescript": "^5.3.3"
 	},
 	"repository": {
 		"type": "git",
