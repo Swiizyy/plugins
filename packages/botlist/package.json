@@ -86,7 +86,7 @@
 		"tsup": "^8.0.1",
 		"tsx": "^4.6.2",
 		"typedoc": "^0.25.4",
-		"typedoc-json-parser": "^9.0.1",
+		"typedoc-json-parser": "^10.0.0",
 		"typescript": "^5.3.3"
 	}
 }
