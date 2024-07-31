@@ -1231,7 +1231,7 @@ __metadata:
     typedoc: "npm:^0.25.4"
     typedoc-json-parser: "npm:^9.0.1"
     typescript: "npm:^5.3.3"
-    undici: "npm:^5.28.4"
+    undici: "npm:^6.19.5"
   languageName: unknown
   linkType: soft
 
@@ -5954,12 +5954,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.25.4, undici@npm:^5.28.4":
+"undici@npm:^5.25.4":
   version: 5.28.4
   resolution: "undici@npm:5.28.4"
   dependencies:
     "@fastify/busboy": "npm:^2.0.0"
   checksum: a666a9f5ac4270c659fafc33d78b6b5039a0adbae3e28f934774c85dcc66ea91da907896f12b414bd6f578508b44d5dc206fa636afa0e49a4e1c9e99831ff065
+  languageName: node
+  linkType: hard
+
+"undici@npm:^6.19.5":
+  version: 6.19.5
+  resolution: "undici@npm:6.19.5"
+  checksum: ea7752b1f989095d940d89c7b4f17ae64f4619c946621d065ca1a49549af7d50bd461f1e1090aa8a766f6b86a092ae63587eac2bf6c7aefd3e8571b245e89f2d
   languageName: node
   linkType: hard
 
